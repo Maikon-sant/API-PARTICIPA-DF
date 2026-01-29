@@ -1,0 +1,30 @@
+# Participa DF - API Ouvidoria
+# Python 3.11+
+
+fastapi==0.109.2
+uvicorn[standard]==0.27.1
+python-multipart==0.0.9
+
+# Database
+sqlalchemy>=2.0
+aiomysql
+pymysql
+
+# Migrations
+alembic==1.13.1
+
+# Validation & config
+pydantic==2.6.1
+pydantic-settings==2.1.0
+
+# Utils
+python-dotenv==1.0.1
+
+# Mídia local (OCR, transcrição, vídeo)
+pytesseract>=0.3.10
+Pillow>=10.0.0
+opencv-python>=4.8.0
+openai-whisper>=20231117
+torch>=2.0.0
+ffmpeg-python>=0.2.0
+numpy>=1.24.0

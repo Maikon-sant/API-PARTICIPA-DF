@@ -1,0 +1,18 @@
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+
+# Uploads (se não forem essenciais)
+uploads/
+
+# Logs
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
