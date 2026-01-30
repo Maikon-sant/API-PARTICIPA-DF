@@ -11,6 +11,8 @@
 **API REST para coleta e processamento de manifestações legislativas**
 
   **https://api.simplificagov.com**
+  **https://api.simplificagov.com/docs** 
+  **https://api.simplificagov.com/redoc** 
 
 </div>
 
@@ -128,9 +130,9 @@ gunicorn app.main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker
 ```
 
 **Acessar:**
-- API: https://api.simplificagov.com:8000
-- Docs: https://api.simplificagov.com:8000/docs
-- ReDoc: https://api.simplificagov.com:8000/redoc
+- API: https://api.simplificagov.com
+- Docs: https://api.simplificagov.com/docs
+- ReDoc: https://api.simplificagov.com/redoc
 
 ---
 
