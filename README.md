@@ -162,7 +162,7 @@ Content-Type: multipart/form-data
 **Parâmetros:**
 
 | Param | Tipo | Descrição |
-|-------|------|-----------|-----------|
+|-------|------|-----------|
 | `original_text` | string | Texto da manifestação |
 | `file` | file | Arquivo (imagem, áudio, vídeo) |
 | `input_type` | string | `TEXT` \| `AUDIO` \| `IMAGE` \| `VIDEO` \| `MIXED` |
@@ -201,9 +201,9 @@ Content-Type: multipart/form-data
 
 **Parâmetros:**
 
-| Param | Tipo | Obrigatório |
-|-------|------|-----------|
-| `file` | file | ✅ |
+| Param | Tipo |
+|-------|------|
+| `file` | file |
 
 **Requisição:**
 ```bash
