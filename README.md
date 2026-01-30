@@ -161,15 +161,15 @@ Content-Type: multipart/form-data
 
 **Parâmetros:**
 
-| Param | Tipo | Obrigatório | Descrição |
+| Param | Tipo | Descrição |
 |-------|------|-----------|-----------|
-| `original_text` | string | ❌ | Texto da manifestação |
-| `file` | file | ❌ | Arquivo (imagem, áudio, vídeo) |
-| `input_type` | string | ✅ | `TEXT` \| `AUDIO` \| `IMAGE` \| `VIDEO` \| `MIXED` |
-| `contact_name` | string | ❌ | Nome (se não anônimo) |
-| `contact_email` | string | ❌ | Email |
-| `contact_phone` | string | ❌ | Telefone |
-| `anonymous` | boolean | ❌ | Padrão: `true` |
+| `original_text` | string | Texto da manifestação |
+| `file` | file | Arquivo (imagem, áudio, vídeo) |
+| `input_type` | string | `TEXT` \| `AUDIO` \| `IMAGE` \| `VIDEO` \| `MIXED` |
+| `contact_name` | string | Nome (se não anônimo) |
+| `contact_email` | string | Email |
+| `contact_phone` | string | Telefone |
+| `anonymous` | boolean | Padrão: `true` |
 
 **Requisição:**
 ```bash
