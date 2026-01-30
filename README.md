@@ -1,7 +1,6 @@
-# API Participa DF
-## Plataforma GovTech para Manifestações Legislativas
-
 <div align="center">
+
+# API Participa DF
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.109.2-009485?logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python)](https://www.python.org/)
@@ -10,9 +9,8 @@
 
 **API REST para coleta e processamento de manifestações legislativas**
 
-  **https://api.simplificagov.com**<br>
-  **https://api.simplificagov.com/docs** <br>
-  **https://api.simplificagov.com/redoc** 
+**https://api.participadf.com**<br>
+**https://api.participadf.com/docs**<br>
 
 </div>
 
