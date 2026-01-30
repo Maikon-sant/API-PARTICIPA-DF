@@ -1,4 +1,20 @@
-# Índice
+# API Participa DF
+## Plataforma GovTech para Manifestações Legislativas
+
+<div align="center">
+
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.109.2-009485?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python)](https://www.python.org/)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?logo=mysql)](https://www.mysql.com/)
+[![License MIT](https://img.shields.io/badge/License-MIT-green)](#licença)
+
+**API REST para coleta e processamento de manifestações legislativas**
+
+  **https://api.participadf.com**
+
+</div>
+
+## Índice
 
 - [Visão Geral](#visão-geral)
 - [Características](#características)
@@ -13,8 +29,7 @@
 - [Membros da Equipe](#membros-da-equipe)
 - [Licença](#licença)
 
-
-SimplificaGov API é uma API REST que permite coleta de manifestações legislativas em múltiplos formatos (texto, áudio, imagem, vídeo) com processamento automático, armazenamento seguro e rastreamento via protocolo único.
+API Participa DF é uma API REST que permite coleta de manifestações legislativas em múltiplos formatos (texto, áudio, imagem, vídeo) com processamento automático, armazenamento seguro e rastreamento via protocolo único.
 
 ### Características
 
@@ -38,7 +53,7 @@ SimplificaGov API é uma API REST que permite coleta de manifestações legislat
 | **Banco** | MySQL 8.0+ / MariaDB 10.5+ |
 | **Autenticação** | Nenhuma (v1.0) / JWT (v2.0) |
 | **Documentação** | Swagger/ReDoc automático |
-| **Base URL** | `https://api.simplificagov.com/v1` |
+| **Base URL** | `https://api.participadf.com/v1` |
 
 ---
 
@@ -66,7 +81,7 @@ sudo apt install python3.11 python3.11-venv mysql-server tesseract-ocr ffmpeg
 
 ```bash
 # Clonar repositório
-git clone https://github.com/simplificagov/api.git
+git clone https://github.com/participadf/api.git
 cd api
 
 # Criar ambiente virtual
@@ -82,7 +97,7 @@ pip install -r requirements.txt
 ```bash
 # Criar banco
 mysql -u root -p
-mysql> CREATE DATABASE simplificagov CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+mysql> CREATE DATABASE participadf CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 mysql> EXIT;
 
 # Rodar migrações
@@ -92,8 +107,8 @@ alembic upgrade head
 ### 4. Configurar `.env`
 
 ```env
-DATABASE_URL=mysql+aiomysql://root:senha@localhost/simplificagov
-APP_NAME=SimplificaGov
+DATABASE_URL=mysql+aiomysql://root:senha@localhost/participadf
+APP_NAME="API Participa DF"
 APP_VERSION=1.0.0
 DEBUG=false
 UPLOADS_DIR=./uploads
@@ -538,7 +553,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      DATABASE_URL: mysql+aiomysql://root:senha@db/simplificagov
+      DATABASE_URL: mysql+aiomysql://root:senha@db/participadf
     depends_on:
       - db
     volumes:
@@ -548,7 +563,7 @@ services:
     image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: senha
-      MYSQL_DATABASE: simplificagov
+      MYSQL_DATABASE: participadf
     ports:
       - "3306:3306"
     volumes:
@@ -599,7 +614,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install python3.11 python3.11-venv mysql-client nginx -y
 
 # Clonar e instalar
-git clone https://github.com/simplificagov/api.git
+git clone https://github.com/participadf/api.git
 cd api
 python3.11 -m venv venv
 source venv/bin/activate
@@ -613,10 +628,10 @@ gunicorn app.main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker -
 ```nginx
 server {
     listen 443 ssl http2;
-    server_name api.simplificagov.com;
+    server_name api.participadf.com;
 
-    ssl_certificate /etc/ssl/certs/api.simplificagov.com.crt;
-    ssl_certificate_key /etc/ssl/private/api.simplificagov.com.key;
+    ssl_certificate /etc/ssl/certs/api.participadf.com.crt;
+    ssl_certificate_key /etc/ssl/private/api.participadf.com.key;
 
     location / {
         proxy_pass http://127.0.0.1:8000;
@@ -681,7 +696,7 @@ MIT License - Veja [LICENSE](LICENSE)
 
 ## 📞 Suporte
 
-- 📧 Email: dev@simplificagov.com.br
+- Email: dev@participadf.com.br
 - 🐛 Issues: GitHub Issues
 - 💬 Discussões: GitHub Discussions
 
@@ -689,10 +704,10 @@ MIT License - Veja [LICENSE](LICENSE)
 
 <div align="center">
 
-**SimplificaGov API v1.0.0**
+**API Participa DF v1.0.0**
 
 Desenvolvido com ❤️ para democratizar a legislação brasileira
 
-[⬆ Voltar ao topo](#-api-simplificagov)
+[⬆ Voltar ao topo](#índice)
 
 </div>
