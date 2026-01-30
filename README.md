@@ -1,4 +1,4 @@
-# 📡 API Participa DF
+# API Participa DF
 ## Plataforma GovTech para Manifestações Legislativas
 
 <div align="center">
@@ -10,31 +10,46 @@
 
 **API REST para coleta e processamento de manifestações legislativas**
 
-📍 **https://api.simplificagov.com**
+  **https://api.simplificagov.com**
 
-[Instalação](#-instalação) | [Endpoints](#-endpoints) | [Exemplos](#-exemplos) | [Documentação](#-documentação) | [Deploy](#-deploy)
+[Instalação](#instalação) | [Endpoints](#endpoints) | [Exemplos](#exemplos) | [Documentação](#documentação) | [Deploy](#deploy)
+
+## Índice
+
+- [Visão Geral](#visão-geral)
+- [Características](#características)
+- [Requisitos](#requisitos)
+- [Instalação](#instalação)
+- [Configuração](#configuração)
+- [Documentação da API](#documentação-da-api)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Testes](#testes)
+- [Segurança](#segurança)
+- [Contribuindo](#contribuindo)
+- [Membros da Equipe](#membros-da-equipe)
+- [Licença](#licença)
 
 </div>
 
 ---
 
-## ℹ️ Sobre
+## Visão Geral
 
-**SimplificaGov API** é uma API REST que permite coleta de manifestações legislativas em múltiplos formatos (texto, áudio, imagem, vídeo) com processamento automático, armazenamento seguro e rastreamento via protocolo único.
+SimplificaGov API é uma API REST que permite coleta de manifestações legislativas em múltiplos formatos (texto, áudio, imagem, vídeo) com processamento automático, armazenamento seguro e rastreamento via protocolo único.
 
-### ✨ Características
+### Características
 
-- 🎤 **Multicanal:** Texto, áudio, imagem ou vídeo
-- 🔒 **Anônimo:** Sem login obrigatório
-- 📍 **Rastreável:** Protocolo único por manifestação
-- 🤖 **Processamento:** OCR, transcrição de áudio, análise de vídeo
-- ⚡ **Rápido:** Respostas em JSON
-- 📚 **Documentado:** Swagger + ReDoc automático
-- 🛡️ **Seguro:** Validação e sanitização completa
+- Multicanal: texto, áudio, imagem ou vídeo
+- Anônimo: sem login obrigatório
+- Rastreável: protocolo único por manifestação
+- Processamento: OCR, transcrição de áudio, análise de vídeo
+- Rápido: respostas em JSON
+- Documentado: Swagger + ReDoc automático
+- Seguro: validação e sanitização completa
 
 ---
 
-## 📋 Tecnologia
+## Tecnologia
 
 | Item | Especificação |
 |------|---------------|
@@ -48,7 +63,7 @@
 
 ---
 
-## 🚀 Instalação Rápida
+## Instalação Rápida
 
 ### 1. Pré-requisitos
 
@@ -586,7 +601,7 @@ pytest -v
 
 ---
 
-## 📚 Documentação
+## Documentação
 
 - **Swagger UI:** http://localhost:8000/docs
 - **ReDoc:** http://localhost:8000/redoc
@@ -594,7 +609,7 @@ pytest -v
 
 ---
 
-## 🚀 Deploy
+## Deploy
 
 ### Produção (AWS)
 
