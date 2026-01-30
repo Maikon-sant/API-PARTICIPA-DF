@@ -1,20 +1,4 @@
-# API Participa DF
-## Plataforma GovTech para Manifestações Legislativas
-
-<div align="center">
-
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.109.2-009485?logo=fastapi)](https://fastapi.tiangolo.com/)
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python)](https://www.python.org/)
-[![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?logo=mysql)](https://www.mysql.com/)
-[![License MIT](https://img.shields.io/badge/License-MIT-green)](#-licença)
-
-**API REST para coleta e processamento de manifestações legislativas**
-
-  **https://api.simplificagov.com**
-
-[Instalação](#instalação) | [Endpoints](#endpoints) | [Exemplos](#exemplos) | [Documentação](#documentação) | [Deploy](#deploy)
-
-## Índice
+# Índice
 
 - [Visão Geral](#visão-geral)
 - [Características](#características)
@@ -29,11 +13,6 @@
 - [Membros da Equipe](#membros-da-equipe)
 - [Licença](#licença)
 
-</div>
-
----
-
-## Visão Geral
 
 SimplificaGov API é uma API REST que permite coleta de manifestações legislativas em múltiplos formatos (texto, áudio, imagem, vídeo) com processamento automático, armazenamento seguro e rastreamento via protocolo único.
 
