@@ -10,7 +10,7 @@
 
 **API REST para coleta e processamento de manifestações legislativas**
 
-  **https://api.participadf.com**
+  **https://api.simplificagov.com**
 
 </div>
 
@@ -128,9 +128,9 @@ gunicorn app.main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker
 ```
 
 **Acessar:**
-- API: http://localhost:8000
-- Docs: http://localhost:8000/docs
-- ReDoc: http://localhost:8000/redoc
+- API: https://api.simplificagov.com:8000
+- Docs: https://api.simplificagov.com:8000/docs
+- ReDoc: https://api.simplificagov.com:8000/redoc
 
 ---
 
@@ -597,9 +597,9 @@ pytest -v
 
 ## Documentação
 
-- **Swagger UI:** http://localhost:8000/docs
-- **ReDoc:** http://localhost:8000/redoc
-- **OpenAPI JSON:** http://localhost:8000/openapi.json
+- **Swagger UI:** https://api.simplificagov.com:8000/docs
+- **ReDoc:** https://api.simplificagov.com/redoc
+- **OpenAPI JSON:** https://api.simplificagov.com/openapi.json
 
 ---
 
@@ -696,17 +696,25 @@ MIT License - Veja [LICENSE](LICENSE)
 
 ## 📞 Suporte
 
-- Email: dev@participadf.com.br
+- Email: maikonicaro04@gmail.com
 - 🐛 Issues: GitHub Issues
 - 💬 Discussões: GitHub Discussions
+
+---
+
+## Equipe de Desenvolvimento
+
+- **Maikon Santos** — Desenvolvedor Fullstack  
+  GitHub: https://github.com/Maikon-sant
+
+- **Maysa Santos** — Tech Lead & Desenvolvedora Fullstack  
+  GitHub: https://github.com/Maysamkt
 
 ---
 
 <div align="center">
 
 **API Participa DF v1.0.0**
-
-Desenvolvido com ❤️ para democratizar a legislação brasileira
 
 [⬆ Voltar ao topo](#índice)
 
